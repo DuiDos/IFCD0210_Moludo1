@@ -12,26 +12,38 @@
 
 * {
     font-family: 'Overpass';
-    border: 1px solid black;
     padding: 0px;
     margin: 0px;
 }
 
 body {
-    width: 375px;
-    margin: auto;
-    background-color: orange;
 }
 
 main {
+    background-color: var(--neutral-very-dark-blue);
+    background: linear-gradient(
+        45deg,
+        var(--neutral-very-dark-blue) 75%,
+        var(--neutral-dark-blue) 100%
+    );
+    margin: auto;
+    width: 300px;
     padding: 20px;
     border-radius: 10%;
-    border: 1px solid black;
 }
 
 h1 {
-    font-weight: var(--font-size-big);
     color: var(--neutral-white);
+    margin: 10px 0px;
+}
+
+p {
+    color: var(--neutral-light-grey);
+    margin: 15px 0px;
+}
+
+.big-size-font {
+    font-weight: var(--font-size-big);
 }
 
 ul {
@@ -43,12 +55,11 @@ ul {
 }
 
 li {
-    border: 1px solid black;
     button {
         font-weight: bold;
         font-size: 1.5rem;
         border-radius: 100%;
-        padding: 20px;
+        padding: 15px;
         color: var(--neutral-light-grey);
         background-color: var(--neutral-dark-blue);
         &:hover {
@@ -59,7 +70,6 @@ li {
 }
 
 .img-star {
-    border: 1px solid black;
     padding: 10px;
     border-radius: 100%;
     background-color: var(--neutral-dark-blue);
@@ -86,4 +96,15 @@ li {
 
 .hidden {
     display: none;
+}
+
+.result {
+    color: var(--primary-color);
+    background-color: var(--neutral-dark-blue);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.second-view-text {
+    text-align: center;
 }
