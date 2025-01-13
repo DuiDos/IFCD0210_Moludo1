@@ -16,14 +16,11 @@
     margin: 0px;
 }
 
-body {
-}
-
 main {
     background-color: var(--neutral-very-dark-blue);
     background: linear-gradient(
         45deg,
-        var(--neutral-very-dark-blue) 75%,
+        var(--neutral-very-dark-blue) 45%,
         var(--neutral-dark-blue) 100%
     );
     margin: auto;
@@ -55,7 +52,7 @@ ul {
 }
 
 li {
-    button {
+    & button {
         font-weight: bold;
         font-size: 1.5rem;
         border-radius: 100%;
@@ -90,10 +87,6 @@ li {
     background-color: var(--neutral-white);
 }
 
-.img-center {
-    margin: auto;
-}
-
 .hidden {
     display: none;
 }
@@ -107,4 +100,8 @@ li {
 
 .second-view-text {
     text-align: center;
+}
+
+.second-view-img {
+    align-items: center;
 }
