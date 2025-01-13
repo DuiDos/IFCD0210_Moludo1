@@ -1,31 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap');
 :root {
-  padding: 0px;
-  box-sizing: border-box;
-  border: 1px solid black;
+    box-sizing: border-box;
+    --primary-color: hsl(25, 97%, 53%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-light-grey: hsl(217, 12%, 63%);
+    --neutral-dark-blue: hsl(213, 19%, 18%);
+    --neutral-very-dark-blue: hsl(216, 12%, 8%);
+    --font-size-big: 700;
+    --font-size-small: 400;
+}
+
+* {
+    font-family: 'Overpass';
+    border: 1px solid black;
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
-  width: 300px;
-  margin: auto;
-  background-color: orange;
+    width: 375px;
+    margin: auto;
+    background-color: orange;
 }
+
 main {
-  padding: 20px;
-  border-radius: 10%;
-  border: 1px solid black;
+    padding: 20px;
+    border-radius: 10%;
+    border: 1px solid black;
 }
+
+h1 {
+    font-weight: var(--font-size-big);
+    color: var(--neutral-white);
+}
+
 ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
 }
 
 li {
-  border: 1px solid black;
-  button {
-    border-radius: 100%;
+    border: 1px solid black;
+    button {
+        font-weight: bold;
+        font-size: 1.5rem;
+        border-radius: 100%;
+        padding: 20px;
+        color: var(--neutral-light-grey);
+        background-color: var(--neutral-dark-blue);
+        &:hover {
+            color: var(--neutral-dark-blue);
+            background-color: var(--primary-color);
+        }
+    }
+}
+
+.img-star {
+    border: 1px solid black;
     padding: 10px;
-  }
+    border-radius: 100%;
+    background-color: var(--neutral-dark-blue);
+}
+
+.button_send {
+    background-color: var(--primary-color);
+    width: inherit;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.score-selected {
+    color: var(--neutral-very-dark-blue);
+    background-color: var(--neutral-white);
+}
+
+.img-center {
+    margin: auto;
+}
+
+.hidden {
+    display: none;
 }
