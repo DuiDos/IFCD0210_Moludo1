@@ -12,5 +12,8 @@
     "license": "ISC",
     "prettier": {
         "singleQuote": true
+    },
+    "dependencies": {
+        "vitest": "^3.0.4"
     }
 }
