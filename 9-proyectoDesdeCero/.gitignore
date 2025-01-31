@@ -7,10 +7,11 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist #es la carpeta donde se guardan los archivos compilados de Ts como Js
-coverage #es la carpeta que se crea al realiar los tests
-dist-ssr
+node_modules    #es la configuración de Node que utilizamos para las pruebas locales
+*.env           #es donde guardamos los datos sensibles del proyecto: contraseñas, API Key y datos que fdeben de estar ocultos
+dist            #es la carpeta donde se guardan los archivos compilados de Ts como Js
+coverage        #es la carpeta que se crea al realiar los tests
+dist
 *.local
 
 # Editor directories and files
